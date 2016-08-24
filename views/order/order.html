@@ -1,0 +1,51 @@
+
+<ion-view hide-tabs="true">
+    <ion-nav-title class="bar-balanced" ui-sref="tab.cart">
+        <h1 class="title">提交订单</h1>
+    </ion-nav-title>
+    <ion-content style="background:#f2f2f2;">
+        <div class="address list" id="address" style="padding-top: 20px;width: 100%;margin-bottom: 0">
+            <div class="item item-input" style="border-top: none;">
+                <span class="input-label">收货人:</span>
+                <input type="text" placeholder="收货人姓名" ng-model="data.name"/>
+            </div>
+            <div class="item item-input" >
+                <span class="input-label">区域选择:</span>
+                <input type="text" placeholder="省，市，区" ng-model="data.city"/>
+            </div>
+            <div class="item item-input">
+                <span class="input-label">详细地址:</span>
+                <input type="text" placeholder="街道，小区，门牌号" ng-model="data.street"/>
+            </div>
+            <div class="item item-input">
+                <span class="input-label">联系方式:</span>
+                <input type="text" placeholder="收货人手机" ng-model="data.phonenum"/>
+            </div>
+        </div>
+        <div class="addresstype">
+                <span class="types">地址类型:</span>
+            <label>
+                <input type="radio" name="type" class="home"> 家
+                <span></span>
+            </label>
+            <label>
+                <input type="radio" name="type" class="home"> 公司
+                <span></span>
+            </label>
+            <label>
+                <input type="radio" name="type" class="home"> 其他
+                <span></span>
+            </label>
+
+        </div>
+        <div class="sumbox">
+            <p>商品总价<span>{{sum() | currency:"￥"}}</span></p>
+
+        </div>
+        <button class="confirm" ui-sref="tab.results" ng-disabled="!data.name || !data.phonenum || !data.street || !data.city ">
+            提交订单
+        </button>
+
+    </ion-content>
+
+</ion-view>

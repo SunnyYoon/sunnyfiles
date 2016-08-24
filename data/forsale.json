@@ -1,0 +1,41 @@
+[
+  {
+    "imgsrc":"images/forsale3.jpg",
+    "name":"墨西哥牛油果",
+    "price":78.00
+  },
+  {
+    "imgsrc":"images/forsale4.jpg",
+    "name":"加拿大蓝莓",
+    "price":58.00
+  },
+  {
+  "imgsrc":"images/forsale5.jpg",
+  "name":"南非葡萄柚",
+  "price":38.90
+  },
+  {
+    "imgsrc":"images/forsale6.jpg",
+    "name":"进口香蕉",
+    "price":19.00
+  },
+  {
+    "imgsrc":"images/forsale7.jpg",
+    "name":"玫瑰香葡萄",
+    "price":49.90
+  },
+  {
+    "imgsrc":"images/forsale8.jpg",
+    "name":"苏食精选大排",
+    "price":39.90
+  },
+  {
+    "imgsrc":"images/forsale9.jpg",
+    "name":"苏食草土鸡",
+    "price":32.80
+  }
+
+
+
+
+]

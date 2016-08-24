@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-nav-title>
+        <h1 class="title">果园精选</h1>
+        <button class="button button-clear icon-right ion-ios-search esearch" style="color:#64a131;"></button>
+    </ion-nav-title>
+    <ion-content>
+        <ion-list class="list-inset fruits">
+            <ion-item class="item-image item-remove-animate fruitsintro" ng-repeat="item in fruits">
+                <div class="imgbox"><img ng-src="{{item.imgsrc}}"></div>
+                <h2>{{item.name}}</h2>
+                <h3>{{item.name2}}</h3>
+                <p>{{item.price | currency:"￥"}}<span>{{item.num}}个</span></p>
+                <div class="button button-icon ion-android-add-circle" style="color:darkorange" ng-click="addproducts(item)"></div>
+            </ion-item>
+            <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false" style="height:0"></ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

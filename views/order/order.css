@@ -1,0 +1,33 @@
+
+.item-input{position: relative;}
+#address span{font-size: 14px;font-family: "微软雅黑"}
+#address.list .item input{
+    padding-left: 38px;
+    font-size: 14px;
+
+    }
+#address .item{border-left:none;border-right:none;padding-left:13px;padding-right: 10px;}
+.addresstype{line-height: 46px;height: 46px;border-bottom: none;color: #000;font-size: 14px; background: #fff;padding-left:10px;}
+.addresstype .types{margin-left: 3px;}
+.addresstype input{padding-left: 500px;display: inline-block;font-size: 14px;margin-left: 28px;}
+.addresstype label{width: 15px;height: 15px;position: relative;}
+.addresstype label span{width: 15px;height: 15px;background: #fff;border: 1px solid lightgrey;display: block;position: absolute;left: 26px;top:2px;border-radius: 50%;}
+.addresstype label .home:focus+span{background: orange;}
+
+.confirm {
+    background: orange;
+    color: #fff;
+    width: 100px;
+    line-height: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    margin-left: 137px;
+    margin-top: 10px;
+    font-family: "微软雅黑"
+}
+.sumbox{line-height: 46px;height: 46px;border-bottom: none;color: #000;font-size: 14px; background: #fff;margin-top: 10px;}
+.sumbox p{color: #000;font-size: 14px;padding-left:10px;}
+.sumbox p span{display: inline-block;margin-left: 20px;font-size: 18px;color: darkorange;font-weight:600}
+

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,ul,li,p,a,input,img,h1,h2,h3,h4,h5,h6,dl,dd,dt,ol {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	color: #64a131;
+	font-family: 'microsoft yahei';
+	font-weight:normal;
+}
+
+li{list-style:none;}
+a{text-decoration: none;}
+img{border:0;display:block;}
+.inner{width:98%;margin-left:1%}
+input{border:0;outline:none;}
+body{font-size: 10px;}
+.clearfix:after{
+	content:'\200B';
+	height:0;
+	display:block;
+	clear:both;
+	}
+
+/*各楼层的title*/
+.mainT-title h3{font-size: 14px;font-weight: 400;min-width: 60px;float: left;color: #4d4d4d;position: relative;font-family: 'microsoft yahei'}
+.mainT-title h3:before{content: '';width:40px;height: 1px;background: #4d4d4d;position: absolute;left: -82%;top:50%;}
+.mainT-title h3:after{content: '';width:40px;height: 1px;background: #4d4d4d;position: absolute;left: 110%;top:50%;}
+
+/*头部的search图标*/
+.bar .button.button-clear.esearch:before{font-size: 18px;font-weight: 800}
+
+/*头部title样式*/
+.bar .thead{font-weight: bold;font-size: 20px;!important;}
+.has-footer.has-tabs{bottom: 0;}
+
+/*tabs的颜色*/
+.tab-item.activated,.tab-item.activate,.tab-item.tab-item-active{color:#64a131;}
+

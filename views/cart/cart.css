@@ -1,0 +1,51 @@
+.headerbar .thead{font-weight: 600;font-size: 16px;letter-spacing: 2px;text-align: center;line-height: 46px;padding-right: 30px;}
+.goodsinfo h2{float: left;padding:0 2%;height: 30px;line-height: 30px;color: #4d4d4d;}
+.goodsinfo h4{float: right;padding:0 2%;height: 30px;line-height: 30px;color: #4d4d4d;}
+#goodsinfo{width: 100px;}
+#List{width: 100%;}
+.chebox {
+    border-width: 0;
+    margin: 0;
+    position: absolute;
+    left: -10px;
+    top: 86px;
+    padding-left: 27px;
+    color: #CC9900;
+}
+
+
+.list .item input,.list .item .item-image,.list .item .goodsinfo{
+    float: left;
+}
+html body .list .item input{
+    position: absolute;
+    left: 0;
+    top: 45%;
+
+}
+
+.list .item .goodsinfo{margin-top: 2%;margin-left: 6%}
+.list .item .goodsinfo h5{margin-bottom:20%}
+.list .item .goodsinfo span{line-height: 15px;height: 15px;}
+.list .item .goodsinfo p{line-height: 20px;height: 20px;color: #CC9900;font-weight: bold;}
+.list .item .goodsnumber{float: right;margin-top:2.5%;text-align: right;}
+.list .item .goodsnumber .num{padding-top:130%;}
+.list .item .goodsnumber .reduce,.list .item .goodsnumber .add {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    color: #CC9900;
+}
+.settle{background: #fff;line-height: 50px;height: 50px;}
+.settle .select{float: left;color: #000;font-size: 14px;margin-left:2%;width:100px;}
+.settle .select span{padding-left:8%}
+.settle .sum{float: right;color: #000;width:198px;}
+.settle .sum span{font-size: 14px;color:#CC9900;font-weight: bold;width:90px;display: inline-block}
+.settle .sum button{line-height: 50px;font-size: 14px;background: #CC9900;color: #fff;border: none;padding:0 12%;}
+
+.goods{width: 120px; height: 120px;}
+
+

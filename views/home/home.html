@@ -1,0 +1,124 @@
+<ion-view class="toTopsettle">
+    <ion-nav-title align-title="center" class="bar">
+        <div class="button button-clear" style="color:#64a131;font-size:13px;font-weight: 400">
+            成都
+            <i class="icon icon-right ion-android-arrow-dropdown esmall"></i>
+        </div>
+        <h1 class="title thead" ng-click="toTop()">Fresher</h1>
+        <button class="button button-clear icon-right ion-ios-search esearch" style="color:#64a131;"></button>
+    </ion-nav-title>
+    <ion-content class="has-header has-footer has-tabs">
+        <ion-slide-box auto-play="true" slide-interval="2000" does-continue="true" show-pager="false" >
+            <ion-slide>
+                <div class="imgslidebox">
+                    <img ng-src="images/banner1.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="imgslidebox">
+                    <img src="images/banner2.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="imgslidebox">
+                    <img src="images/banner3.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="imgslidebox">
+                    <img src="images/banner4.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="imgslidebox">
+                    <img src="images/banner5.jpg">
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <ion-refresher pulling-text="下拉刷新"  on-refresh="refresh()" spinner="ios"></ion-refresher>
+        <div class="mainIcons clearfix">
+            <ul>
+                <li class="iconimg">
+                    <span class="ione"><i class="icon ion-android-alarm-clock enlarge" ></i></span>
+                    <p>新品抢鲜</p>
+                </li>
+            </ul>
+            <ul>
+                <li class="iconimg">
+                    <span class="itwo"><i class="icon ion-ios-box-outline enlarge"></i></span>
+                    <p>天天有礼</p>
+                </li>
+            </ul>
+            <ul>
+                <li class="iconimg">
+                    <span class="ithree"><i class="icon ion-ios-personadd-outline enlarge"></i></span>
+                    <p>新客新享</p>
+                </li>
+            </ul>
+            <ul>
+                <li class="iconimg">
+                    <span class="ifor"><i class="icon ion-ios-world-outline enlarge"></i></span>
+                    <p>企业服务</p>
+                </li>
+
+            </ul>
+        </div>
+        <div class="mainT clearfix">
+            <div class="mainT-title">
+                <h3>天天爆款 </h3>
+                <div class="time">
+                    <span>{{$scope.date-interv.time | date:"hh:"}}
+                    {{$scope.date-interv.time | date:"mm:"}}
+                    {{$scope.date-interv.time | date:"ss"}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="mainTh clearfix">
+            <ion-scroll zooming="false" direction="xy" style="width:100%;overflow: hidden">
+                <div class="row mainTh-inner">
+                    <div class="scrollbox" ng-repeat="item in forSale">
+                        <img ng-src="{{item.imgsrc}}">
+                        <p>{{item.name}}</p>
+                        <span>{{item.price | currency:"￥"}}</span>
+                    </div>
+                </div>
+            </ion-scroll>
+        </div>
+        <div class="mainF clearfix">
+            <div class="inner clearfix">
+                <div class="mainT-title">
+                    <h3>新客专享</h3>
+                </div>
+                <a class="img" href="#"><img src="images/newman1.jpg"></a>
+            </div>
+
+        </div>
+        <div class="mainF mainF-editor clearfix">
+            <div class="inner">
+                <div class="mainT-title">
+                    <h3>小编教你买</h3>
+                </div>
+                <div class="Mtop"><img src="images/banner4.jpg" ></div>
+                <div class="Mleft"><img src="images/xiaobian.gif"></div>
+                <div class="Mright">
+                    <img style="height: 50%" src="images/xiaobian01.jpg">
+                    <img style="height: 49%;margin-top: 1%;" src="images/xiaobian02.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="mainF clearfix" style="margin-top:2%;">
+            <div class="inner">
+                <div class="mainT-title clearfix">
+                    <h3>大家都爱买</h3>
+                </div>
+                <div class="list">
+                        <div class="item  Nopadding" ng-repeat="pic in buylover">
+                        <a class="img" href="#"><img ng-src="{{pic.imsrc}}"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ion-content>
+<div class="modall"></div>
+</ion-view>

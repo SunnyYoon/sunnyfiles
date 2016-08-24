@@ -1,0 +1,53 @@
+[
+  {
+    "imgsrc":"images/forsale1.jpg",
+    "name":"佳沛新西兰阳光金奇异果",
+    "name2":"浓甜爆浆 黄金能量",
+    "price":78.00,
+    "num":12
+  },
+  {
+    "imgsrc":"images/forsale5.jpg",
+    "name":"南非葡萄柚",
+    "name2":"天然叶酸 膳食纤维",
+    "price":43.00,
+    "num":6
+  },
+  {
+    "imgsrc":"images/apple.jpg",
+    "name":"新西兰爵士苹果",
+    "name2":"咔嚓一口脆爽 跳跃的酸甜",
+    "price":38.90,
+    "num":6
+  },
+  {
+    "imgsrc":"images/mugua.jpg",
+    "name":"海南木瓜",
+    "name2":"熟在树上 奶香浓郁",
+    "price":29.00,
+    "num":3
+  },
+  {
+    "imgsrc":"images/lanmei.jpg",
+    "name":"新奇士美国瓦伦西亚蓝莓",
+    "name2":"清润酸甜 初恋的味道",
+    "price":39.00,
+    "num":12
+  },
+  {
+    "imgsrc":"images/forsale3.jpg",
+    "name":"墨西哥牛油果",
+    "name2":"宝贝的智慧果 辅食的精选搭配",
+    "price":49.00,
+    "num":6
+  },
+  {
+    "imgsrc":"images/wuhuaguo.jpg",
+    "name":"精选波姬无花果",
+    "name2":"软糯绵密入心甜",
+    "price":29.00,
+    "num":4
+  }
+
+
+]

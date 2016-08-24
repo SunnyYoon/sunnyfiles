@@ -1,0 +1,67 @@
+<ion-view view-title="discuss" class="bar-energized">
+    <ion-nav-title>
+        <div class="button button-clear icon-left ion-ios-personadd-outline"></div>
+        <h1 class="title">社区</h1>
+        <div class="button button-clear icon-right ion-ios-chatbubble-outline"></div>
+    </ion-nav-title>
+    <ion-content class="has-footer has-header has-tabs" style="background:url(images/bgbgbg_03.jpg) repeat;">
+        <div class="itemwrapper">
+            <div class="nopadding item item-input-inset" >
+                <label class="item-input-wrapper">
+                    <i class="icon icon-left ion-search"></i>
+                    <input type="text" placeholder="输入您感兴趣的关键字搜索" ng-disabled="">
+                </label>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col col-33">
+                    <span><i class="icon ion-ios-ionic-outline"></i></span>
+                    果友圈
+                </div>
+                <div class="col col-33">
+                    <span  style="background: orange"><i class="icon ion-fork"></i></span>
+                    料理
+                </div>
+                <div class="col col-33">
+                    <span  style="background: lightblue"><i class="icon ion-ios-bookmarks-outline"></i></span>
+                    果食百科
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-33">
+                    <span  style="background: limegreen"><i class="icon ion-ios-plus-outline"></i></span>
+                    健康养生
+                </div>
+                <div class="col col-33">
+                    <span  style="background: palegoldenrod"><i class="icon ion-happy-outline"></i></span>
+                    趣闻
+                </div>
+                <div class="col col-33">
+                    <span  style="background: palevioletred"><i class="icon ion-ios-paper-outline"></i></span>
+                    一周谈
+                </div>
+            </div>
+
+        <div class="news clearfix">
+            <i class="newsbig icon ion-ios-list-outline"></i>
+            最新发布
+        </div>
+        <div class="newslist">
+            <div class="details">
+                <ion-list ng-repeat="item in news">
+                    <ion-item class="item item-thumbnail-left" >
+                        <img ng-src="{{item.imsrc}}">
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.desc}}</p>
+                        <div class="itemright">
+                            <i class="thumbups item-icon-left icon ion-thumbsup" ng-init="count=0" ng-click="count=count+1"></i><span>{{count}}</span>
+                            <i class="comments item-icon-left ion-ios-chatbubble-outline"></i><span>3</span>
+                        </div>
+                    </ion-item>
+                    <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false" style="height:0"></ion-infinite-scroll>
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+    <div class="modall"></div>
+</ion-view>

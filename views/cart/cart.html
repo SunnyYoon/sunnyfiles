@@ -1,0 +1,46 @@
+<ion-view  hide-nav-bar="true">
+    <div class="headerbar">
+        <button class="button button-clear" style="color:#64a131;font-size: 12px;height: 40px;line-height: 40px;color: #64a131;float: left;" ng-click="turnoffon.showDelete =!turnoffon.showDelete">编辑</button>
+        <h1 class="title thead">购物车</h1>
+    </div>
+    <ion-content class="has-footer has-tabs has-tabs-top has-badge" style="background:url(images/bgbgbg_03.jpg) repeat;position: absolute;z-index:-1;">
+        <div class="goodsinfo clearfix">
+            <h2>商品清单</h2>
+            <h4>总重量约10kg</h4>
+        </div>
+        <ion-list id="List" show-delete="turnoffon.showDelete" >
+            <ion-item ng-repeat="item in cart" style="position: relative">
+                <ion-delete-button class="ion-minus-circled" ng-click="delete(item)"></ion-delete-button>
+                <div class="item-image goods"><img ng-src="{{item.imgsrc}}"></div>
+                <div class="goodsinfo" id="goodsinfo">
+                    <h5>{{item.goods}}</h5>
+                    <span>{{item.number}}个</span>
+                    <p>{{item.price | currency:"￥"}}</p>
+                </div>
+                <div class="goodsnumber">
+                    <span>0.09kg</span>
+                    <div class="num">
+                        <button class="reduce" type="button" ng-click="reduce(item);">-</button>
+                        <span style="color: #000;min-width:20px;">{{item.number}}</span>
+                        <button class="add" type="button" ng-click="add(item)">+</button>
+                    </div>
+                </div>
+            </ion-item>
+
+        </ion-list>
+        <div class="settle clearfix has-tabs has-footer">
+            <div class="sum">
+                合计:<span>{{sum() | currency:"￥"}}</span>
+                <button type="button" ui-sref="tab.order" ng-disabled="">结算</button>
+            </div>
+        </div>
+
+    </ion-content>
+    <div style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);" ng-show="isShow" >
+        <div class="popBox" ng-show="isShow" style="width:140px;height: 80px;text-align: center;border-radius: 5px;background: rgba(0,0,0,0.5);position: absolute;left: 50%;top:50%;transform:translate(-50%,-80%);z-index:30">
+            <p style="color: #f2f2f2;font-size: 14px;line-height: 45px;">是否删除该商品?</p>
+            <span ng-click="Delete();hide()" style="color: #f2f2f2;font-size: 12px;float: left;margin-left:14px;display: block;border: 1px solid #f2f2f2;padding:0 5px;border-radius:3px;">确定</span>
+            <span ng-click="hide();" style="color: #f2f2f2;font-size: 12px;float: right;margin-right:14px;display: block;border: 1px solid #f2f2f2;padding:0 5px;border-radius:3px;">取消</span>
+        </div>
+    </div>
+</ion-view>

@@ -1,0 +1,24 @@
+<ion-view>
+    <ion-nav-title>
+        <h1 class="title" style="font-size: 15px;">手机号快捷登录</h1>
+    </ion-nav-title>
+    <ion-content style="background:url(images/bgbgbg_03.jpg) repeat;">
+        <div class="list list-inset" id="inputlist">
+            <div class="item item-input inputitem">
+                <span class="inputicon input-label icon icon-left ion-android-phone-portrait"></span>
+                <input type="text" placeholder="手机号" ng-model="data.phonenum">
+                <span class="idcode">获取验证码</span>
+            </div>
+            <div class="item item-input inputitem">
+                <span class="inputicon input-label icon icon-left ion-key"></span>
+                <input type="password" placeholder="请输入验证码" ng-model="data.identifycode " ng-minlength="6">
+            </div>
+
+        </div>
+        <span class="index">首次用手机号登录将自动为您注册，享新客专属折扣</span>
+        <button class="loginbtn button" ng-disabled="!data.identifycode || !data.phonenum ">登录</button>
+        <span class="loginwaysleft">账号密码登录</span>
+        <span class="loginwaysright">未收到验证码？</span>
+    </ion-content>
+    <div class="modall"></div>
+</ion-view>

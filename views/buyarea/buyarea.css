@@ -1,0 +1,16 @@
+
+.fruitsintro{border: none;width: 96%;border-bottom: 1px solid #e4e5e7;margin-bottom: 10px;}
+.fruitsintro .imgbox{width: 90px;height: 90px;float: left;padding: 5px;}
+.fruitsintro .imgbox img{border-radius:5px;}
+.fruitsintro h2,h3{float:left;width: 70%;text-align: left;}
+.fruitsintro h2{color: #000;font-size: 14px;margin-top: 8px;}
+.fruitsintro h3{color: #4d4d4d;font-size: 12px;}
+.fruitsintro p{width: 40%;text-align: left;margin-top: 63px;font-size: 14px;color: orange;font-weight: 600;}
+.fruitsintro p span{display: inline-block;margin-left: 10px;font-size: 10px;color: #ccc;font-weight: normal;}
+
+.fruitsintro .button{float: right;position: absolute;right: 7px;bottom:-8px;}
+
+
+
+
+
